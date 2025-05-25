@@ -10,13 +10,13 @@
 
 ### 📄 PDF Tools
 - ✅ Merge multiple PDF files
-- ✅ Split PDFs by page ranges
-- ✅ Rotate, delete, or reorder pages
-- ✅ Convert images (JPG/PNG) to PDF
-- ✅ Add watermark (text/image) to PDF pages
+- ✅ *Coming Soon*: Split PDFs by page ranges
+- ✅ *Coming Soon*: Rotate, delete, or reorder pages
+- ✅ *Coming Soon*: Convert images (JPG/PNG) to PDF
+- ✅ *Coming Soon*: Add watermark (text/image) to PDF pages
 
 ### 🔍 OCR & Text Extraction
-- ✅ OCR for scanned PDFs and images (PaddleOCR or Tesseract)
+- ✅ OCR for scanned PDFs and images (PaddleOCR)
 - ✅ Table extraction from scans with fallback logic
 - 🧪 *Coming Soon*: Generate searchable PDFs with embedded OCR text
 
