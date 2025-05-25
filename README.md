@@ -118,4 +118,5 @@ Contributions welcome! Please:
 
 ## 🌐 Contact
 Created by [Hemraj Chauhan](https://hemrajchauhan.com)
+
 Reach out with ideas, feature requests, or collaboration offers!
