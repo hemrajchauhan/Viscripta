@@ -1,8 +1,8 @@
 ### app/main.py
 
 from fastapi import FastAPI
-from app.routers import merge, ocr, extract_table
 from app.core.config import settings
+from app.routers import merge, ocr, extract_table
 
 app = FastAPI(
     title=settings.PROJECT_NAME,

@@ -1,15 +1,16 @@
 ## app/services/pdf_service.py
 
 import io
-from pypdf import PdfMerger
+from pypdf import PdfReader, PdfWriter
 from fastapi import UploadFile
 
 async def merge_pdfs(files: list[UploadFile]) -> io.BytesIO:
-    merger = PdfMerger()
+    writer = PdfWriter()
     for file in files:
-        merger.append(file.file)
+        reader = PdfReader(file.file)
+        for page in reader.pages:
+            writer.add_page(page)
     output = io.BytesIO()
-    merger.write(output)
-    merger.close()
+    writer.write(output)
     output.seek(0)
     return output

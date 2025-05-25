@@ -1,0 +1,21 @@
+## docker-compose.yml
+
+version: "3.8"
+services:
+  viscripta_api:
+    build: .
+    container_name: viscripta_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  viscripta_tests:
+    build: .
+    container_name: viscripta_tests
+    depends_on:
+      - viscripta_api
+    volumes:
+      - ./:/app
+    command: pytest --maxfail=1 --disable-warnings -q
