@@ -19,6 +19,7 @@
 - ✅ OCR for scanned PDFs and images (PaddleOCR)
 - ✅ Table extraction from scans with fallback logic
 - 🧪 *Coming Soon*: Generate searchable PDFs with embedded OCR text
+- 🧪 *Coming Soon*: OCR using Google Vision API
 
 ### 🧠 Smart Table Parsing
 - Detect and extract table structures using:
